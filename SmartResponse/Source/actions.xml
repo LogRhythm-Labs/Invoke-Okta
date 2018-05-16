@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<remv1:Remediation-Plugin xmlns:remv1="RemediationVersion1.xsd" Name="Okta Automation" Version="1" Guid="93d6f51d-f275-443a-9b8e-acf3f792a714">
+
+  <!-- Query Okta User Information -->
+  <remv1:Action Name="Query Okta User Information" Command="C:\Windows\System32\WindowsPowershell\v1.0\powershell.exe">
+    <remv1:ConstantParameter Name="Script" Switch="-file okta-SRP.ps1" Order="1" />
+    <remv1:StringParameter Name="Username" Switch="-userName " Order="2">
+      <remv1:DefaultInput>
+        <remv1:Account />
+      </remv1:DefaultInput>
+    </remv1:StringParameter>
+    <remv1:StringParameter Name="Okta Domain" Switch="-domain " Order="3" />
+    <remv1:StringParameter Name="API Key" Switch="-key " Order="4" />
+  </remv1:Action>
+
+ <!-- Clear Okta User's Sessions -->
+  <remv1:Action Name="Clear Okta Sessions" Command="C:\Windows\System32\WindowsPowershell\v1.0\powershell.exe">
+    <remv1:ConstantParameter Name="Script" Switch="-file okta-SRP.ps1 -clearSessions" Order="1" />
+    <remv1:StringParameter Name="Username" Switch="-userName " Order="2">
+      <remv1:DefaultInput>
+        <remv1:Account />
+      </remv1:DefaultInput>
+    </remv1:StringParameter>
+    <remv1:StringParameter Name="Okta Domain" Switch="-domain " Order="3" />
+    <remv1:StringParameter Name="API Key" Switch="-key " Order="4" />
+  </remv1:Action>
+
+  <!-- Suspend Okta User's Account -->
+  <remv1:Action Name="Suspend Okta User Account" Command="C:\Windows\System32\WindowsPowershell\v1.0\powershell.exe">
+    <remv1:ConstantParameter Name="Script" Switch="-file okta-SRP.ps1 -suspend" Order="1" />
+    <remv1:StringParameter Name="Username" Switch="-userName " Order="2">
+      <remv1:DefaultInput>
+        <remv1:Account />
+      </remv1:DefaultInput>
+    </remv1:StringParameter>
+    <remv1:StringParameter Name="Okta Domain" Switch="-domain " Order="3" />
+    <remv1:StringParameter Name="API Key" Switch="-key " Order="4" />
+  </remv1:Action>
+
+  <!-- UnSuspend Okta User's Account -->
+  <remv1:Action Name="UnSuspend Okta User Account" Command="C:\Windows\System32\WindowsPowershell\v1.0\powershell.exe">
+    <remv1:ConstantParameter Name="Script" Switch="-file okta-SRP.ps1 -unSuspend" Order="1" />
+    <remv1:StringParameter Name="Username" Switch="-userName " Order="2">
+      <remv1:DefaultInput>
+        <remv1:Account />
+      </remv1:DefaultInput>
+    </remv1:StringParameter>
+    <remv1:StringParameter Name="Okta Domain" Switch="-domain " Order="3" />
+    <remv1:StringParameter Name="API Key" Switch="-key " Order="4" />
+  </remv1:Action>
+
+  <!-- Unlock Okta User's Account -->
+  <remv1:Action Name="Unlock Okta User Account" Command="C:\Windows\System32\WindowsPowershell\v1.0\powershell.exe">
+    <remv1:ConstantParameter Name="Script" Switch="-file okta-SRP.ps1 -unlock" Order="1" />
+    <remv1:StringParameter Name="Username" Switch="-userName " Order="2">
+      <remv1:DefaultInput>
+        <remv1:Account />
+      </remv1:DefaultInput>
+    </remv1:StringParameter>
+    <remv1:StringParameter Name="Okta Domain" Switch="-domain " Order="3" />
+    <remv1:StringParameter Name="API Key" Switch="-key " Order="4" />
+  </remv1:Action>
+
+  <!-- Reset Okta User's Password -->
+  <remv1:Action Name="Reset Okta User Password" Command="C:\Windows\System32\WindowsPowershell\v1.0\powershell.exe">
+    <remv1:ConstantParameter Name="Script" Switch="-file okta-SRP.ps1 -resetPassword" Order="1" />
+    <remv1:StringParameter Name="Username" Switch="-userName " Order="2">
+      <remv1:DefaultInput>
+        <remv1:Account />
+      </remv1:DefaultInput>
+    </remv1:StringParameter>
+    <remv1:StringParameter Name="Okta Domain" Switch="-domain " Order="3" />
+    <remv1:StringParameter Name="API Key" Switch="-key " Order="4" />
+  </remv1:Action>
+
+</remv1:Remediation-Plugin>
