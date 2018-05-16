@@ -71,10 +71,27 @@ Blog Post => TBD
 
 ## [LogRhythm Integration]
 
-Import the LogRhythm Dashboard to track Okta user activity across all of your connected apps
+#### Import the LogRhythm Dashboard to track Okta user activity across all of your connected apps
 
-Import Alarms to trigger on events of interest
+![LogRhythm Dashboard](https://user-images.githubusercontent.com/727732/40144233-266dc638-591b-11e8-9e3a-f84495727604.png)
 
+#### Import Alarms to trigger on events of interest
+
+Brute Force Detection:
+![Brute Force AIE Rule](https://user-images.githubusercontent.com/727732/40144280-53a46be8-591b-11e8-9b39-1c521bfae713.png)
+
+API Token Creation:
+![API Token Creation](https://user-images.githubusercontent.com/727732/40144322-7015fbde-591b-11e8-92bf-bf6392d615a9.png)
+
+Failed Multifactor Authentication:
+![Failed MFA](https://user-images.githubusercontent.com/727732/40144364-8c8c570e-591b-11e8-80f7-177d9ec4be4b.png)
+
+User Locked Out:
+![User Locked Out](https://user-images.githubusercontent.com/727732/40144375-9a914fb2-591b-11e8-86f6-cee2415ec72a.png)
+
+#### Take this a step further with SmartResponse Automation
+
+![SmartResponse Automation](https://user-images.githubusercontent.com/727732/40144407-bef7c76e-591b-11e8-8267-e0a873729088.png)
 
 ## [License]
 
