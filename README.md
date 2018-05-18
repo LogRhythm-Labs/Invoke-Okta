@@ -73,6 +73,8 @@ Blog Post => TBD
 
 #### Import the LogRhythm Dashboard to track Okta user activity across all of your connected apps
 
+Configure Okta to forward logs to LogRhythm using the API integration: [Exporting Okta Log Data](https://support.okta.com/help/Documentation/Knowledge_Article/Exporting-Okta-Log-Data)
+
 ![LogRhythm Dashboard](https://user-images.githubusercontent.com/727732/40144233-266dc638-591b-11e8-9e3a-f84495727604.png)
 
 #### Import Alarms to trigger on events of interest
