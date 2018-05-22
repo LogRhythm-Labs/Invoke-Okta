@@ -14,7 +14,7 @@ Collection of useful commands for easy interaction with Okta, focused on SIEM Au
 
 This script is also integrated directly into the LogRhythm SIEM as a [SmartResponse](https://logrhythm.com/solutions/security/security-automation-and-orchestration/).
 
-Blog Post => TBD
+Blog Post => [https://logrhythm.com/blog/take-the-first-steps-towards-a-zero-trust-model-with-okta-automation/](https://logrhythm.com/blog/take-the-first-steps-towards-a-zero-trust-model-with-okta-automation/)
 
 
 ## [PowerShell Installation and Usage]
